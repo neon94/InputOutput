@@ -14,7 +14,7 @@ public class Locations implements Map<Integer, Location> {
         }
     }
 
-    //will be executed once only when Locations class loaded
+    // Will be executed once only when Locations class loaded
     static {
         try (ObjectInputStream locFile = new ObjectInputStream(new BufferedInputStream(new FileInputStream("locations.dat")))) {
             boolean eof = false;
